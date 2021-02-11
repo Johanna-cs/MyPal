@@ -1,36 +1,45 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom'
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'bootstrap';
+import { Button, Modal } from 'react-bootstrap';
 
 import './ModalsCss.css'
 
-const ModalSoon = (props) => {
-  const {
-    className
-  } = props;
+const ModalSoon = () => {
+
 
   // Modal fermée par défaut
-  const [modal, setModal] = useState(true);
-  
+  const [show, setShow] = useState(true)
+
   // Ouvrir/fermer la modal 
-  const toggle = () => setModal(!modal);
+  const handleClose = () => setShow(!show)
+  const handleShow = () => setShow(true)
+
 
   return (
-    <div className="container_modal">
-      <Modal isOpen={modal} toggle={toggle} className={className}>
-      <ModalHeader toggle={toggle}></ModalHeader>
-        <ModalBody>
-        <h4>Bientôt !</h4>
-          <p style={{ textAlign: "center"}}>La création de compte n'est pas encore disponible.</p>
-        </ModalBody>
-        <ModalFooter>
-        <Link to="/home" style={{ textDecoration: "none"}}>
-          <Button id='loginBtn' color="light" onClick={toggle}>Parcourir My Pal</Button>
-        </Link>
-        </ModalFooter>
-      </Modal>
-    </div>
+    <>
+
+      {/* <Button variant="primary" onClick={handleShow}>
+        Launch demo modal
+      </Button> */}
+      <div className="container_modal">
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title><h4>Bientôt !</h4></Modal.Title>
+          </Modal.Header>
+            <Modal.Body>
+              <p style={{ textAlign: "center"}}>La création de compte n'est pas encore disponible.</p>
+            </Modal.Body>
+          <Modal.Footer>
+          <Link to="/home" style={{ textDecoration: "none"}}>
+            <Button id='loginBtn' variant="light" onClick={handleClose}>
+              Parcourir My Pal
+            </Button>
+          </Link>
+          </Modal.Footer>
+        </Modal>
+        </div>
+</>
   );
 }
 
-export default ModalSoon;
+export default ModalSoon; 

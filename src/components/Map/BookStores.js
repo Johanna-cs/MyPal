@@ -1,29 +1,48 @@
-import React from 'react'
-import Axios from 'axios'
+import React, {useState, useMapEvents} from 'react'
+import './map.css'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import Menu from '../Menu'
+import ReturnButton from '../Common/ReturnButton'
 
 const BookStores = () => {
-
-
+    const position = [43.3, 5.4]
+    // const [position, setPosition] = useState(null)
+    // const map = useMapEvents({
+    //     click() {
+    //       map.locate()
+    //     },
+    //     locationfound(e) {
+    //       setPosition(e.latlng)
+    //       map.flyTo(e.latlng, map.getZoom())
+    //     },
+    //   }) 
 
     return(
         <>
-           <div id="mapid" style={{ height: "'180px; "}}>
-           <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+        <ReturnButton />
+        <div className='page_map'> 
+            <h3>Trouvez un libraire près de vous</h3>
+       
+           <div className='leaflet-container'>
+           <MapContainer
+                    center={position}
+                    zoom={13}
+                    scrollWheelZoom={true}>
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <Marker position={[51.505, -0.09]}>
+                    />
+                <Marker position={position}>
                     <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
+                        A pretty CSS3 popup. <br /> Easily customizable.
                     </Popup>
                 </Marker>
-            </MapContainer>
-
-
+            </MapContainer>,
            </div>
 
+        
+        </div>
+        <Menu />
         </>
     )
 
