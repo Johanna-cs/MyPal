@@ -1,0 +1,75 @@
+.Profil-page {
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow : column nowrap;
+    background-color: white;
+}
+.Profil_header {
+    display : flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.Profil-infos {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #e0e7e8;
+    box-shadow: 5px 2px 2px #8E8B9B30;
+    margin: 1.5em;  
+}
+.Profil-infos p {
+    font-size: 1em;
+    padding: 0.2em;
+    margin: 0.5em;
+    text-align: left;
+}
+
+.Profil-infos h5  {
+    font: 400;
+}
+
+button {
+    outline: none;
+  }
+#Profil-button {
+background-color: white;
+  color : #8E8B9B;
+  width: 10em;
+  height: 3em;
+  border-radius: 20px;
+  border-style: solid ;
+  border-width: 1px;
+  margin: 1em;
+}
+#Profil-button p {
+    font-size: 0.2em;
+}
+
+.Profil-avatar {
+    width: 6em;
+    height: 6em;
+    border-radius: 20%;
+    box-shadow: 5px 2px 2px #8E8B9B30;
+    margin: 1.5em;
+    padding-bottom: 3px;
+    background-color: #F7F7F7;
+}
+.avatar {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 20%;
+}
+.mypal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mypalTitle {
+    font-weight: 600 !important;
+    text-align: left;
+    padding-left: 2em;
+}

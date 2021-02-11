@@ -1,0 +1,100 @@
+.home_page {
+    display : flex;
+    flex-flow : column wrap;
+    justify-content: center;
+    padding-bottom: 5.2em;;
+}
+.home_header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow : row nowrap;
+    padding: 2em;
+}
+/*** return Button ***/
+.return Button {
+    outline: none;
+    border: none;
+    margin: 1em;
+    width: 3em ;
+}
+.return {
+    align-self: left;
+}
+/*** -- ***/
+
+.home_title {
+    width: 10em;
+    margin-top: 2em;
+}
+.yellowBtn {
+    background-color: #dc975d;
+    width: 10em;
+    height: 3em;
+    border-radius: 20px;
+    margin: 1em;
+    box-shadow: 4px 5px 10px -6px #8e8b9b;
+}
+.yellowBtn p {
+    padding: 1px;
+    margin: 1em;
+    color : #6F6C78;
+}
+
+button {
+    outline: none;
+    border: none;
+  }
+  @media only screen 
+  and (min-device-width: 320px)
+  and (max-device-width: 812px) {
+.category_books {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.row {
+    display: flex;
+    flex-flow : column nowrap !important;
+    align-items: center;
+}}
+.category_books {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    flex-flow : row wrap;
+    justify-content: center;
+}
+.type_container {
+    border-radius: 1em;
+    padding : 10px;
+    margin : 20px;
+    box-shadow: 4px 6px 10px -6px #8e8b9b;
+}
+h4 {
+    text-align: center;
+    padding: 1px;
+    margin: none !important;
+   
+}
+.type_container :hover {
+    color: white !important;
+    font-weight: 800 !important;
+
+}
+
+
+/**** Menu navbar ****/
+.menu_navbar {
+  position: fixed;
+  bottom: 0em;
+  background-color: white;
+  height: 4.9em;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 2px 0px 3px 0px #77838f65;
+  width: 100%;
+
+}

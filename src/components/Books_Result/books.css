@@ -1,0 +1,93 @@
+.bookResult {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 5.6em;
+}
+.resultHeader {
+    background-color: #df7e7b;
+    border-radius: 10px;
+    box-shadow: 4px 5px 10px -6px #8e8b9b;
+    margin: 1em;
+}
+.resultHeader h3 {
+    margin: 0.2em;
+    padding: 0.2em;
+}
+@media only screen 
+  and (min-device-width: 350px)
+  and (max-device-width: 812px) {
+    .bookResult {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding-bottom: 5.6em;
+    }
+  }
+.bookCard {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 19em;
+    height: 10em;
+    padding: 1.2em;
+    margin: 7px;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    box-shadow: 4px 5px 10px -6px #8e8b9b;
+}
+
+.bookCard_container {
+    display: flex;
+    align-items: center;
+    width: 17em;
+    height: 10em;
+    
+
+}
+
+.book_cover {
+    margin-top: 1.2em;
+    margin-right: 1em;
+}
+.book_infos {
+    height: 8em;
+    margin-left: 1em;
+}
+.book_infos h5 {
+    padding: 1px !important;
+    margin: 1px !important;
+}
+.book_infos h4 {
+    padding: 3px !important;
+    margin: 2px !important;
+}
+
+.book_infos p {
+    margin: 1px;
+    padding: 1px;
+}
+
+a {
+    width: min-content;
+    outline: none;
+    text-decoration: none;
+}
+
+.bookStatus {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;
+    width: 10em;
+    padding-left: 5em;
+}
+.bookStatus p {
+    color: #df7e7b;
+    margin: 5px;
+    padding: 1px;
+}
+.bookStatus svg {
+    margin-left: 2px;
+}

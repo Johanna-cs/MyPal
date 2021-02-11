@@ -1,0 +1,11 @@
+.container_modal {
+    display: flex;
+    top: 1;
+}
+
+.modal_soon {
+    display: flex;
+    justify-content: center; 
+    top : 1; 
+
+}

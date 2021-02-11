@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# My PAL :books:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+C'est une petite application créée lors d'une évaluation à la [Wild Code School](https://www.wildcodeschool.com/fr-FR/campus/marseille), et j'ai été inspirée par mon quotidien. La lecture et les bouquins, c'est un de mes passe-temps, et il est toujours important de noter ses prochaines lectures. :bookmark:
 
-## Available Scripts
+## Fonctionnalités
 
-In the project directory, you can run:
+- :eye_speech_bubble: Partie recherche de livres par catégorie, et également par ISBN :mag: (l'identifiant unique d'un livre). 
+- :sassy_woman: Le but est de créer un compte utilisateur pour enregistrer ses prochaines lectures, sur une page profil. 
+- :newspaper: Il y a un blog avec les infos d'[Actualitté.com](https://actualitte.com). 
+- :school: Egalement une carte des librairies indépendantes à proximité de l'utilisateur. 
 
-### `npm start`
+## Réalisation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Application en React.js avec des appels à l'API Google Books pour obtenir des couverture de livres ainsi que leurs infos. Création d'un backend correspondant avec Node.js. 
+- Enregistrement des informations de l'utilisateur, ses livres dans sa Pile à Lire. 
+- Et récupération des infos grâce à un web scraping [Puppeteer](https://pptr.dev) d'[Actualitté](https://actualitte.com/thematique/35/chroniques). 
+- Recherche par ISBN effectuée avec un appel Axios sur [Bibliosurf](https://www.bibliosurf.com/Presentation-de-l-API.html).
+- Carte des libraires créée avec [Leaflet](https://leafletjs.com).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+:construction: Bientôt déployée ! 
