@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from "react-router-dom";
-// import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 function ReturnButton() {
@@ -9,7 +9,7 @@ function ReturnButton() {
     return (
       <div className="return">
           <button onClick={()=>history.goBack()} className="return_btn">
-            {/* <FontAwesomeIcon icon={faChevronLeft}/>  */}
+            <FontAwesomeIcon icon={faChevronLeft}/> 
           </button>
       </div>
     );

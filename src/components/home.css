@@ -44,6 +44,7 @@ button {
     outline: none;
     border: none;
   }
+/***** partie categorie *****/
   @media only screen 
   and (min-device-width: 320px)
   and (max-device-width: 812px) {
@@ -61,26 +62,29 @@ button {
     flex-flow: row wrap;
     justify-content: center;
 }
+.logo_cat {
+    width: 70%;
+}
 .row {
     display: flex;
     flex-flow : row wrap;
     justify-content: center;
 }
 .type_container {
-    border-radius: 1em;
+    text-align: center;
     padding : 10px;
     margin : 20px;
-    box-shadow: 4px 6px 10px -6px #8e8b9b;
+    
 }
-h4 {
+.type_container h4 {
     text-align: center;
     padding: 1px;
     margin: none !important;
    
 }
 .type_container :hover {
-    color: white !important;
-    font-weight: 800 !important;
+    color:  #dc975d !important;
+    font-weight: 600 !important;
 
 }
 

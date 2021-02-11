@@ -19,22 +19,23 @@ const BookStores = () => {
 
     return(
         <>
-        <ReturnButton />
         <div className='page_map'> 
-            <h3>Trouvez un libraire près de vous</h3>
-       
+            <div className='map_header'>
+                <ReturnButton />
+                <h3>Trouver une librairie</h3>
+            </div>
            <div className='leaflet-container'>
            <MapContainer
                     center={position}
-                    zoom={13}
-                    scrollWheelZoom={true}>
+                    zoom={14}
+                    scrollWheelZoom={false}>
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                 <Marker position={position}>
                     <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
+                        <b>Les mots dans l'eau</b>  <br /> Les Cinq Avenues.
                     </Popup>
                 </Marker>
             </MapContainer>,

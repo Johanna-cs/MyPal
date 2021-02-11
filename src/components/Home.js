@@ -35,7 +35,7 @@ const Home = (props) => {
             </div>
         </div>
 
-            <div className='category_books'>
+    <div className='category_books'>
         <div className='row'>
             <div className='type_container'>
             <Link to=
@@ -53,46 +53,57 @@ const Home = (props) => {
                     style={{ textDecoration: "none" }}
                     onClick={() => setAllBook() && setTypeBook(allBook)}
                 >
-                <img className='logo_cat' src={book1} width="200" alt="book logo" />
-                <h4>Tousles livres</h4>
-                </Link>
-            </div>
-        </div>
-        <div className='row'>
-            <div className='type_container'>
-            <Link to=
-                    {{ pathname : '/book/results'}}
-                    style={{ textDecoration: "none" }}
-                    onClick={() => setThrillerBook() && setTypeBook(thrillerBook)}
-                >
-                <img className='logo_cat' src={book4} width="200" alt="book logo" />
-                <h4>Thrillers</h4>
-            </Link>
-            </div>
-            <div className='type_container'>
-            <Link to=
-                    {{ pathname : '/book/results'}}
-                    style={{ textDecoration: "none" }}
-                    onClick={() => setNovelBook() && setTypeBook(novelBook)}
-                >
-                <img className='logo_cat' src={book2} width="200" alt="book logo" />
-                <h4>Romans</h4>
+                <img className='logo_cat' src={book3} width="200" alt="book logo" />
+                <h4>Tous les livres</h4>
                 </Link>
             </div>
         </div>
 
         <div className='row'>
             <div className='type_container'>
-            <Link to=
-                    {{ pathname : '/book/results'}}
-                    style={{ textDecoration: "none" }}
-                    onClick={() => setFantasyBook() && setTypeBook(fantasyBook)}
-                >
-                <img className='logo_cat' src={book6} width="200" alt="book logo" />
-                <h4>Fantasy</h4>
-            </Link>
+                <Link to=
+                        {{ pathname : '/book/results'}}
+                        style={{ textDecoration: "none" }}
+                        onClick={() => setThrillerBook() && setTypeBook(thrillerBook)}
+                    >
+                    <img className='logo_cat' src={book1} width="200" alt="book logo" />
+                    <h4>Thrillers</h4>
+                </Link>
             </div>
+            <div className='type_container'>
+                <Link to=
+                        {{ pathname : '/book/results'}}
+                        style={{ textDecoration: "none" }}
+                        onClick={() => setNovelBook() && setTypeBook(novelBook)}
+                    >
+                    <img className='logo_cat' src={book2} width="200" alt="book logo" />
+                    <h4>Romans</h4>
+                </Link>
             </div>
+        </div>
+
+        <div className='row'>
+            <div className='type_container'>
+                <Link to=
+                        {{ pathname : '/book/results'}}
+                        style={{ textDecoration: "none" }}
+                        onClick={() => setFantasyBook() && setTypeBook(fantasyBook)}
+                    >
+                    <img className='logo_cat' src={book6} width="200" alt="book logo" />
+                    <h4>Fantasy</h4>
+                </Link>
+            </div>
+            <div className='type_container'>
+                <Link to=
+                        {{ pathname : '/book/results'}}
+                        style={{ textDecoration: "none" }}
+                        onClick={() => setFantasyBook() && setTypeBook(fantasyBook)}
+                    >
+                    <img className='logo_cat' src={book4} width="200" alt="book logo" />
+                    <h4>Etranger</h4>
+                </Link>
+            </div>
+        </div>
         </div>
         <Menu />
     </div>

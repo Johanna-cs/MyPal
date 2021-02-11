@@ -5,6 +5,10 @@
     padding-bottom: 6em;
 }
 
+.map_header {
+    width: 15em ;
+}
+
 .leaflet-container {
     width: 100%;
     height: 90vh;
@@ -19,6 +23,12 @@
       .page_map{
           display: flex;
           flex-flow: column nowrap;
+      };
+      .leaflet-container {
+        
+        background-color: white;
+        z-index: 0;
+    
       }
 
    }
