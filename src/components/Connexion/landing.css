@@ -1,24 +1,23 @@
 .Landing_page {
     display : flex;
-    flex-flow : column wrap;
+    flex-flow : column nowrap;
     align-items: center;
-    
 }
 .title {
     text-align: left;
 }
 .slogan_box {
-    margin-left: 10em;
-    width: 10em;;
+    margin-left: 15em;
+    width: 13em;;
 }
 .slogan {
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: right;
 }
 
 .Main_illu {
     margin: 15px;
-    width: 20em;
+    width: 25em;
 }
 /* desktop and tablet */
 @media (min-width: 728px) and (max-width: 1280px), (min-width: 1281px) {
@@ -46,10 +45,14 @@
         width: 50em;
     }
 }
-
+.landing_center {
+    margin-top: 4em;
+}
 .landing_bottom {
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    bottom: 10em;
 }
 
 a :active, a {
