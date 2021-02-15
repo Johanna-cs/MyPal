@@ -1,33 +1,44 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './home.css'
+import { faCoffee, faBookReader, faCity, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const Menu = () => {
 
     return (
     <div className='menu_navbar'>
-        <div className='menu_login'>
-            <Link to={{
-                    pathname: '/login'
-                }}>
-                    <button className='menu_icn'><p> Connexion </p></button>
+
+            <button className='menu_item'>
+                <Link to={{pathname: '/home'}}>
+                    <FontAwesomeIcon icon={faSearch}/> 
                 </Link>
-        </div>
-        <div className='menu_stores'>
-            <Link to={{
-                    pathname: '/stores'
-                }}>
-                    <button className='menu_icn'><p> Les libraires </p></button>
+            </button>
+
+            <button className='menu_item'>
+                <Link to={{pathname: '/blog'}}>
+                    <FontAwesomeIcon icon={faCoffee}/> 
                 </Link>
-        </div>
-        <div className='menu_profile'>
-            <Link to={{
-                    pathname: '/profil'
-                }}>
-                    <button className='menu_icn'><p> Mon espace </p></button>
+            </button>
+
+            <button className='menu_item'>
+            <Link to={{pathname: '/stores'}}>
+                    <FontAwesomeIcon icon={faCity}/>
                 </Link>
-        </div>
+            </button>
+
+            <button className='menu_item'>
+                <Link to={{pathname: '/profil'}}>
+                    <FontAwesomeIcon icon={faBookReader}/>
+                </Link>
+            </button>
+                        
+            {/* <button className='menu_item'>
+                <Link to={{pathname: '/login'}}>
+                    <p> Connexion </p>
+                </Link>
+            </button> */}
     </div>
     )
 }

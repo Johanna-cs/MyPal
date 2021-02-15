@@ -27,16 +27,25 @@
 .return {
     align-self: left;
 }
-
+.return button :hover {
+    color : #dc975d;
+    outline: none;
+    text-decoration: none;
+}
 button {
     outline: none;
     border: none;
   }
+
+
 /*** -- ***/
-/* 
-#dc975d;
-#6F6C78 
-*/
+/* .home {
+    background-color: #dc975d;
+    background-color: #6F6C78;
+    background-color: #4E325A;
+    background-color: #df7e7b; 
+}  */
+
 
 /***** partie categorie *****/
 
@@ -77,16 +86,35 @@ button {
 .menu_navbar {
   position: fixed;
   bottom: 0em;
-  background-color: white;
-  height: 4.9em;
-  color: white;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  height: 4.9em;
   box-shadow: 2px 0px 3px 0px #77838f65;
   width: 100%;
   z-index: 1;
 
 }
+.menu_item {
+    width: 9em;
+    background-color: transparent !important;
+}
+.menu_item button {
+    background-color: white !important;
+}
+.menu_item a {
+    text-decoration: none;
+    outline: none;
+    color : #6F6C78;
+    font-size: 1.5em;
+}
+.menu_item a :hover {
+    color : #dc975d;
+    outline: none;
+    text-decoration: none;
+}
+
 /* Media Query sur mobile portrait & landscape */
 @media only screen 
 and (min-device-width: 320px)

@@ -30,7 +30,7 @@ const Landing = () => {
 
                 <div>
                     <Link to="/home" style={{ textDecoration: "none" }}>
-                            <button type='button' id='invite'> Parcourir </button>
+                            <button type='button' id='palBtn'> Parcourir </button>
                     </Link>
                 </div>
                 
